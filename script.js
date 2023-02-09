@@ -52,10 +52,14 @@ getData().then((posts) => {
 
 // SORTING FUNCTION BY ID (post.id)
 const sortById = (posts) => {
+  console.log(posts);
   // YOUR CODE HERE
+  return posts.sort((a, b) => (a.id < b.id ? 1 : -1));
 };
 
 // SORTING FUNCTION BY LENGTH (post.body.length)
 const sortByCommentLength = (posts) => {
+  console.log(posts);
   // YOUR CODE HERE
+  return posts.sort((a, b) => (a.body.length > b.body.length ? 1 : -1));
 };
